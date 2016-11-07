@@ -16,7 +16,7 @@
 			remove(){
 				NoteRepo.remove(this.note, (err) => {
 					if (err) {
-						self.$emit('alerted', {
+						this.$emit('alerted', {
 							type: 'error', 
 							message: 'Failed to remove note'
 						});
